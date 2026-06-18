@@ -2,19 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Galerie</title>
+    <title>Contact</title>
 </head>
 <body>
 
-       <header class="header">
+ <!-- ========================================= -->
+<!-- HEADER -->
+<!-- ========================================= -->
+
+<header class="header">
     
     <div class="container nav-container">
 
         <div class="logo">
             <img src="assets/images/logo.png" alt="Logo Charity's House">
-            <a href="#">
+            <a href="index.html#accueil">
             <h2>Charity's House</h2>   
             </a>
         </div>
@@ -48,124 +53,141 @@
 
     </div>
 
-</header> <br><br><br>
+</header>
 
-    <section id="galerie" class="gallery">
+
+    <br><br>
+
+
+
+    <section id="contact" class="contact">
 
     <div class="container">
 
         <div class="section-header">
 
             <span class="section-subtitle">
-                GALERIE
+                CONTACT
             </span>
 
             <h2>
-                Nos actions en images
+                Parlons ensemble
             </h2>
 
             <p>
-                Plongez au cœur de nos actions
-                à travers nos photos.
+                Une question, une suggestion,
+                une envie d'aider ?
+                Notre équipe est à votre écoute.
             </p>
 
         </div>
 
-        <!-- FILTRES -->
+        <!-- INFOS CONTACT -->
 
-        <div class="gallery-filters">
+        <div class="contact-info">
 
-            <!--
+            <div class="contact-card">
 
-            <button class="gallery-btn active">
-                Toutes
-            </button>
+                <i class="fa-solid fa-phone"></i>
 
-            <button class="gallery-btn">
-                Photos
-            </button>
+                <h3>Téléphone</h3>
 
-            <button class="gallery-btn">
-                Vidéos
-            </button>
+                <p>
+                    +225 07 18 86 20 40
+                </p>
 
-            <button class="gallery-btn">
-                Événements
-            </button> -->
+            </div>
 
-            <button class="gallery-btn">
-                <img src="assets/images/terrain.jpg" alt="sur terrain">
-                Terrain
-            </button> 
+            <div class="contact-card">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <h3>WhatsApp</h3>
+
+                <p>
+                    +225 07 18 86 20 40
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>
+                    contact@charityshouse.org
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Adresse</h3>
+
+                <p>
+                     Abidjan
+                    Côte d'Ivoire
+                </p>
+
+            </div>
 
         </div>
 
-        <!-- GALERIE IMAGES -->
-
-        <div class="gallery-grid">
-
-            <div class="gallery-item">
-                <img src="assets/images/action.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/aide.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/amour.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/cardi.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/cardo.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/carton.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/food.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/huile.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/joie.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="assets/images/money.jpg" alt="">
-            </div>  
-
-              <div class="gallery-item">
-                <img src="assets/images/piece.jpg" alt="">
-            </div> 
-
-            <div class="gallery-item">
-                <img src="assets/images/propre.jpg" alt="">
-            </div>  
-
+        <!-- RESEAUX SOCIAUX -->
 
         </div>
 
-        <!-- VIDÉOS -->
+        <!-- FORMULAIRE CONTACT -->
 
-        <!-- LIGHTBOX -->
+        <div class="contact-form-container">
 
-        <div class="lightbox">
+            <div class="contact-form">
 
-            <span class="close-lightbox">
-                &times;
-            </span>
+                <h3>
+                    Envoyez-nous un message
+                </h3>
 
-            <img class="lightbox-image" src="" alt="notre image">
+                <p>
+                    Réponse sous 24h ouvrées.
+                </p>
+
+                <form>
+
+                    <input type="text"
+                        placeholder="Nom complet">
+
+                    <input type="email"
+                        placeholder="Email">
+
+                    <input type="text"
+                        placeholder="Sujet">
+
+                    <textarea
+                        placeholder="Votre message"></textarea>
+
+                    <button type="submit">
+                        Envoyer
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- GOOGLE MAPS -->
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb="
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
 
         </div>
 
@@ -182,7 +204,7 @@
             <!-- COLONNE 1 -->
 
             <div class="footer-col">
-                <img src="assets/images/logo.png" alt="logo">
+                <img src="assets/images/logo.png" alt="Logo Charity's House">
 
                 <h3>
                     Charity's House
@@ -310,8 +332,8 @@
             <p>
                 <p class="social-icons">
                 <a href="https://www.facebook.com/share/g/18X92s5UuZ/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://wa.me/2250718862040"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.tiktok.com/@charityshouse"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 
             </p>
             
@@ -327,5 +349,6 @@
 </footer>
 
 <script src="js/script.js"></script> 
+
 </body>
 </html>
