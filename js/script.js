@@ -34,6 +34,8 @@ window.addEventListener("scroll", () => {
 
 });
 
+
+
 /* ========================================= */
 /* FILTRE DES ACTIONS */
 /* ========================================= */
@@ -313,4 +315,56 @@ if(contactForm){
 
 }
 
+/* ========================================= */
+/* NEWSLETTER FOOTER */
+/* ========================================= */
+
+const newsletterForm =
+document.querySelector(".newsletter-form");
+
+const newsletterMessage =
+document.getElementById("newsletter-message");
+
+if(newsletterForm){
+
+    newsletterForm.addEventListener("submit", (e) => {
+
+        e.preventDefault();
+
+        const email =
+        newsletterForm.querySelector("input").value.trim();
+
+        if(email === ""){
+
+            newsletterMessage.textContent =
+            "Veuillez entrer votre adresse email.";
+
+            newsletterMessage.style.color = "red";
+
+            return;
+        }
+
+        const emailRegex =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if(!emailRegex.test(email)){
+
+            newsletterMessage.textContent =
+            "Veuillez entrer une adresse email valide.";
+
+            newsletterMessage.style.color = "red";
+
+            return;
+        }
+
+        newsletterMessage.textContent =
+        "Merci pour votre inscription !";
+
+        newsletterMessage.style.color = "white";
+
+        newsletterForm.reset();
+
+    });
+
+}
 

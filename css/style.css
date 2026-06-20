@@ -2546,6 +2546,17 @@ form button:hover {
     padding: 10px 0;
 
 }
+/* Formulaire de mon footer*/
+#newsletter-message{
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+    
+
+}
 
 /* ========================================= */
 /* COUNTDOWN */
