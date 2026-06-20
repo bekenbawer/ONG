@@ -80,25 +80,23 @@
 
                 <h3>Formulaire Bénévole</h3>
 
-                <form id="benevole-form">
+                <form id="benevole-form" action="https://formspree.io/f/xwvdekyq" method="post">
 
-                    <input type="text"
-                        placeholder="Nom">
+                   <input type="text" id="nom" name="nom" placeholder="Nom" required>
 
-                    <input type="text"
-                        placeholder="Prénom">
+<input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
 
-                    <input type="email"
-                        placeholder="Email">
+<input type="email" id="email" name="email" placeholder="Email" required>
 
-                    <input type="tel"
-                        placeholder="Téléphone">
+<input type="tel" id="tel" name="telephone" placeholder="Téléphone" required>
 
-                    <input type="text"
-                        placeholder="Disponibilité">
+<input type="text" id="disponibilite" name="disponibilite" placeholder="Disponibilité" required>
 
-                    <textarea
-                        placeholder="Compétences"></textarea>
+<textarea
+    id="competence"
+    name="competence"
+    placeholder="Compétences"
+    required></textarea>
 
                     <button type="submit">
                         Envoyer
@@ -117,19 +115,34 @@
 
                 <h3>Formulaire Partenaire</h3>
 
-                <form id="partenaire-form">
+                <form id="partenaire-form" action="https://formspree.io/f/xnjkaqwo" method="post">
 
-                    <input type="text"
-                        placeholder="Nom de la structure">
+                    <input
+    type="text"
+    id="nom"
+    name="nom"
+    placeholder="Nom de la structure"
+    required>
 
-                    <input type="text"
-                        placeholder="Contact">
+<input
+    type="text"
+    id="contact"
+    name="contact"
+    placeholder="Contact"
+    required>
 
-                    <input type="text"
-                        placeholder="Type de partenariat">
+<input
+    type="text"
+    id="partenariat"
+    name="partenariat"
+    placeholder="Type de partenariat"
+    required>
 
-                    <textarea
-                        placeholder="Message"></textarea>
+<textarea
+    id="message"
+    name="message"
+    placeholder="Message"
+    required></textarea>
 
                     <button type="submit">
                         Envoyer
@@ -146,19 +159,29 @@
 
                 <h3>Formulaire Entreprise</h3>
 
-                <form id="entreprise-form">
+                <form id="entreprise-form" action="https://formspree.io/f/xdarnobb" method="post">
+
+                    <input 
+                    type="text"
+                      id="nom" 
+                      name="nom" 
+                      placeholder="Nom de l'entreprise">
 
                     <input type="text"
-                        placeholder="Nom de l'entreprise">
+                      id="secteur" 
+                      name="secteur" 
+                      placeholder="Secteur d'activité">
 
-                    <input type="text"
-                        placeholder="Secteur d'activité">
-
-                    <input type="text"
-                        placeholder="Contact">
+                    <input 
+                    type="text"
+                    id="contact"
+                    name="contact"
+                    placeholder="Contact">
 
                     <textarea
-                        placeholder="Proposition de collaboration"></textarea>
+                      id="collaboration" 
+                      name="collaboration" 
+                      placeholder="collaboration"></textarea>
 
                     <button type="submit">
                         Envoyer
@@ -279,17 +302,19 @@
                     Recevez nos actions et campagnes.
                 </p>
 
-                <form >
+                <form class="newsletter-form" action="https://formspree.io/f/mlgyrezy" method="post">
 
                     <input
                         type="email"
-                        placeholder="Votre email">
+                        placeholder="Votre email" >
 
-                    <button type="submit">
+                    <button type="submit" >
                         S'abonner
                     </button>
 
                 </form>
+                
+                <p id="newsletter-message"></p>
 
             </div>
 

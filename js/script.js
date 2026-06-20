@@ -97,7 +97,7 @@ function gererFormulaire(formId, messageId) {
 
     form.addEventListener("submit", (e) => {
 
-        e.preventDefault();
+       
 
         const inputs = form.querySelectorAll(
             "input, textarea, select"
@@ -231,7 +231,7 @@ if(contactForm){
 
     contactForm.addEventListener("submit",(e)=>{
 
-        e.preventDefault();
+        
 
         const nom =
         document.getElementById("nom").value.trim();
@@ -329,7 +329,7 @@ if(newsletterForm){
 
     newsletterForm.addEventListener("submit", (e) => {
 
-        e.preventDefault();
+        
 
         const email =
         newsletterForm.querySelector("input").value.trim();
@@ -367,4 +367,3 @@ if(newsletterForm){
     });
 
 }
-
